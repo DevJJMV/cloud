@@ -4,7 +4,7 @@ $id = $_GET['id'];
 require_once ("../../includes/_db.php");
 
 // Consulta SQL para obtener detalles del usuario con el ID proporcionado
-$consulta = "SELECT * FROM usuarios WHERE id = ?";
+$consulta = "SELECT * FROM user WHERE id = ?";
 $params = array($id);
 
 $resultado = sqlsrv_query($conexion, $consulta, $params);
