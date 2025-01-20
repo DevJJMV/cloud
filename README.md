@@ -40,38 +40,26 @@ Azure CLI installed if you wish to redeploy to the cloud.
 Steps
 Clone the repository:
 
-bash
-Copiar
-Editar
+
 git clone https://github.com/yourusername/personal-practice-app.git
 Navigate to the project folder:
 
-bash
-Copiar
-Editar
+
 cd personal-practice-app
 Start a local PHP server:
 
-bash
-Copiar
-Editar
+
 php -S localhost:8000
 Open the app in your browser:
 
-arduino
-Copiar
-Editar
+
 http://localhost:8000
 To test the Hack files, run:
 
-bash
-Copiar
-Editar
+
+
 hhvm index.hack
 📂 Project Structure
-plaintext
-Copiar
-Editar
 personal-practice-app/
 ├── assets/
 │   ├── css/          # CSS files for styling
@@ -86,28 +74,19 @@ personal-practice-app/
 Steps to Deploy on Azure
 Login to your Azure account:
 
-bash
-Copiar
-Editar
 az login
 Create a new resource group and App Service:
 
-bash
-Copiar
-Editar
+
+
 az group create --name PracticeAppGroup --location "East US"
 az appservice plan create --name PracticeAppPlan --resource-group PracticeAppGroup --sku FREE
 Deploy the application:
 
-bash
-Copiar
-Editar
+
 az webapp up --name personal-practice-app --resource-group PracticeAppGroup --runtime "PHP|8.0"
 Access the live app:
 
-arduino
-Copiar
-Editar
 https://personal-practice-app.azurewebsites.net
 🖼 Screenshots
 Homepage	Features Page
